@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # modul-c
 projek soal modul c lks jatim
 =======
@@ -67,3 +68,7 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 >>>>>>> 13099a0 (commit)
+=======
+# modul-c
+projek modul c lks jatim
+>>>>>>> 739a016d680406cc863ee75edeab2f59bb4c1007
