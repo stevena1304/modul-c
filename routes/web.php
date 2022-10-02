@@ -25,8 +25,8 @@ Route::get('/login', function() {
     return view('login');
 });
 
-Route::get('/login2', function() {
-    return view('login-iksan');
+Route::get('/register', function(){
+    return view('register');
 });
 
 Route::get('/admin', function() {
@@ -40,11 +40,11 @@ Route::post('actionlogin', [LoginController::class, 'actionlogin'])->name('actio
 Route::get('dashboard', [DashboardController::class, 'dashboard'])->name('dashboard')->middleware('auth');
 Route::get('actionlogout', [LoginController::class, 'actionlogout'])->name('actionlogout')->middleware('auth');
 
-//REGISTER
-Route::get('register', [RegisterController::class, 'register'])->name('register');
-Route::post('register/action', [RegisterController::class, 'actionregister'])->name('actionregister');
+// //REGISTER
+// Route::get('register', [RegisterController::class, 'register'])->name('register');
+// Route::post('register/action', [RegisterController::class, 'actionregister'])->name('actionregister');
 
-Auth::routes();
+// Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 

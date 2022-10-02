@@ -1,100 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <title>Geek Bot</title>
+    <!-- Bootstrap -->
+    <link rel='stylesheet' href="{{asset('template2/stylesheets/bootstrap.css')}}" >
+    <link rel='stylesheet' href="{{asset('template2/stylesheets/style.css')}}" />
+  </head>
+  <body class="login">
+    
+    <div class="row">
+      <div class="col-md-4">
+          <div class="head">
+              <h1 style="color:white;">Geek Bot</h1>
+              <h2 style="color:white;">Registrasi</h2>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="form-style">
+            <center>
+              <h1 style="color:white">Registrasi</h1>
+              <img src="{{asset('template2/images/Login.png')}}" >
+                <form action="<%= dir %>" >
+                    <p style="color:white">Nama</p>
+                    <input type="text" name="nama" ><br>
+                    <br>
 
-<head>
+                  <p style="color:white">Email</p>
+                    <input type="email" name="email" ><br>
+                    <br>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+                   <p style="color:white">Password</p> 
+                    <input type="password" name="password" ><br>
+                    <br>
 
-    <title>Register</title>
+                    <p style="color:white">No HP</p> 
+                    <input type="text" name="nohp" ><br>
+                    <br>
 
-    <!-- Custom fonts for this template-->
-    <link href="{{asset('template/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
+                    <p style="color:white">Alamat Rumah</p> 
+                    <input type="text" name="alamat" ><br>
+                    <br>
 
-    <!-- Custom styles for this template-->
-    <link href="{{asset('template/css/sb-admin-2.min.css')}}" rel="stylesheet">
-
-</head>
-
-<body class="bg-gradient-primary">
-
-    <div class="container">
-
-        <div class="card o-hidden border-0 shadow-lg my-5">
-            <div class="card-body p-0">
-                <!-- Nested Row within Card Body -->
-                <div class="row">
-                    <!-- <div class="col-lg-5 d-none d-lg-block bg-register-image"></div> -->
-                    <div class="col-lg-12">
-                        <div class="p-5">
-                            <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
-                            </div>
-                            <form class="user">
-                                <div class="form-group">
-                                        <input type="text" class="form-control form-control-user" id="exampleName"
-                                            placeholder="Name">
-                                    
-                                    <!-- <div class="col-sm-6">
-                                        <input type="text" class="form-control form-control-user" id="exampleLastName"
-                                            placeholder="Last Name">
-                                    </div> -->
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
-                                        placeholder="Email Address">
-                                </div>
-                                <div class="form-group">
-                                        <input type="password" class="form-control form-control-user"
-                                            id="exampleInputPassword" placeholder="Password">
-                                    
-                                    <!-- <div class="col-sm-6">
-                                        <input type="password" class="form-control form-control-user"
-                                            id="exampleRepeatPassword" placeholder="Repeat Password">
-                                    </div> -->
-                                </div>
-                                <button type="submit" class="btn btn-dark btn-user btn-block">
-                                    Register Account
-                                </button>
-                                <hr>
-                                <!-- <a href="index.html" class="btn btn-google btn-user btn-block">
-                                    <i class="fab fa-google fa-fw"></i> Register with Google
-                                </a>
-                                <a href="index.html" class="btn btn-facebook btn-user btn-block">
-                                    <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
-                                </a> -->
-                            </form>
-                            <hr>
-                            <!-- <div class="text-center">
-                                <a class="small" href="forgot-password.html">Forgot Password?</a>
-                            </div> -->
-                            <div class="text-center">
-                                <a class="small" href="/login">Already have an account? Login!</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+                    <input type="submit" value="Register">
+                  </form>
+            </center>        
+          </div>
+      </div>
     </div>
-
-    <!-- Bootstrap core JavaScript-->
-    <script src="{{asset('template/vendor/jquery/jquery.min.js')}}"></script>
-    <script src="template/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Core plugin JavaScript-->
-    <script src="{{asset('template/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script src="{{asset('template/js/sb-admin-2.min.js')}}"></script>
-
-</body>
-
+   
+    
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+     <script src="{{asset('template2/javascripts/jquery-3.1.0.js')}}"></script>
+     <!-- Include all compiled plugins (below), or include individual files as needed -->
+     <script src="{{asset('template2/javascripts/bootstrap.js')}}"></script>
+  </body>
 </html>
